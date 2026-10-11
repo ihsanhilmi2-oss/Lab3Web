@@ -1,4 +1,9 @@
 # Praktikum HTML dan CSS Eksternal
+Praktikum 3 - Pemrograman Web
+Identitas
+Nama: Muhammad Ikhsan Hilmi
+NIM: 312510046
+Kelas: I253A
 
 ## 1. Deskripsi
 Praktikum ini bertujuan untuk mempelajari penggunaan HTML dan CSS dalam pembuatan halaman web sederhana. HTML digunakan untuk membangun struktur halaman, sedangkan CSS digunakan untuk mengatur tampilan, warna, jarak, dan desain elemen halaman web.

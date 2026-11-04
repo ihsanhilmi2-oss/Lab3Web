@@ -1,70 +1,109 @@
-# Praktikum HTML dan CSS Eksternal
-Praktikum 3 - Pemrograman Web
-Identitas
-Nama: Muhammad Ikhsan Hilmi
-NIM: 312510046
-Kelas: I253A
+# Praktikum 3 - CSS Dasar
 
-## 1. Deskripsi
-Praktikum ini bertujuan untuk mempelajari penggunaan HTML dan CSS dalam pembuatan halaman web sederhana. HTML digunakan untuk membangun struktur halaman, sedangkan CSS digunakan untuk mengatur tampilan, warna, jarak, dan desain elemen halaman web.
+## Identitas Praktikum
 
-## 2. Tujuan Praktikum
-- Memahami struktur dasar HTML.
-- Memahami cara menghubungkan CSS eksternal dengan HTML.
-- Mempelajari penggunaan CSS Selector, ID Selector, dan Class Selector.
-- Mengatur tampilan navigasi, bagian konten, dan tombol menggunakan CSS.
+- **Mata Kuliah:** Pemrograman Web
+- **Praktikum:** 3
+- **Materi:** CSS Dasar
+- **Program Studi:** Teknik Informatika
 
-## 3. Struktur File
-File yang digunakan dalam praktikum ini adalah:
+## A. Tujuan Praktikum
+
+1. Memahami konsep dasar CSS.
+2. Memahami aturan penulisan CSS.
+3. Memahami selector sebagai pengontrol CSS.
+4. Membuat pengaturan CSS pada HTML.
+
+## B. Struktur Folder
 
 ```text
-project/
-├── lab2_css_eksternal.html
+Lab3Web/
+├── lab2_css_dasar.html
 ├── style_eksternal.css
-└── README.md
+├── README.md
+└── screenshot/
 ```
 
-## 4. Penjelasan File
+## C. Langkah Kerja Praktikum
 
-### A. lab2_css_eksternal.html
-File HTML berfungsi untuk membuat struktur halaman web, meliputi:
-- Header dengan judul CSS Internal dan Inline CSS.
-- Navigasi untuk berpindah ke halaman lain.
-- Bagian konten dengan judul Hello World.
-- Paragraf informasi mengenai pembelajaran HTML dan CSS.
-- Tombol Informasi selengkapnya.
+### 1. Membuat Dokumen HTML
 
-HTML juga menggunakan CSS internal untuk mengatur jenis huruf, ukuran judul, warna teks, dan garis bawah header.
+Membuat dokumen HTML dengan struktur dasar yang terdiri dari header, navigasi, judul, paragraf, dan hyperlink.
 
-### B. style_eksternal.css
-File CSS eksternal digunakan untuk mengatur tampilan halaman web, meliputi:
+**Screenshot:**
 
-- **Navigation (`nav`)**: Mengatur warna latar belakang hijau, warna teks, dan jarak navigasi.
-- **Navigation Link (`nav a`)**: Mengatur warna tautan, menghilangkan garis bawah, dan memberikan jarak.
-- **Hover**: Mengubah warna latar belakang tautan ketika kursor diarahkan ke tautan.
-- **ID Selector (`#intro`)**: Mengatur latar belakang biru, border, tinggi minimum, dan padding pada bagian konten.
-- **ID Selector (`#intro h1`)**: Mengatur judul di dalam konten agar rata kiri dan berwarna putih.
-- **Class Selector (`.button`)**: Mengatur tampilan tombol, padding, margin, dan warna teks.
-- **Class Selector (`.btn-primary`)**: Memberikan warna latar belakang merah pada tombol utama.
+![Langkah 1](Screenshots/langkah1-html-dasar.png)
 
-## 5. Cara Menghubungkan CSS Eksternal
-CSS eksternal dihubungkan dengan HTML menggunakan tag `<link>` di dalam bagian `<head>`.
+### 2. Mendeklarasikan CSS Internal
 
-```html
-<link rel="stylesheet" href="style_eksternal.css">
-```
+Menambahkan CSS internal menggunakan tag `<style>` pada bagian `<head>` untuk mengatur jenis font, warna, ukuran teks, dan tampilan header.
 
-Nama file pada atribut `href` harus sesuai dengan nama file CSS yang digunakan.
+**Screenshot:**
 
-## 6. Langkah Menjalankan Program
-1. Buka folder project menggunakan Visual Studio Code.
-2. Pastikan file HTML dan CSS berada dalam folder yang sama.
-3. Simpan seluruh file.
-4. Buka file `lab2_css_eksternal.html` menggunakan browser.
-5. Amati hasil tampilan halaman web.
+![Langkah 2](Screenshots/langkah2-css-internal.png)
 
-## 7. Hasil Praktikum
-Halaman web menampilkan navigasi berwarna hijau, bagian konten dengan latar belakang biru, serta tombol berwarna merah. Tampilan tersebut menunjukkan bahwa CSS eksternal berhasil diterapkan pada elemen HTML.
+### 3. Menambahkan Inline CSS
 
-## 8. Kesimpulan
-Berdasarkan praktikum ini, HTML dan CSS memiliki fungsi yang saling melengkapi dalam pembuatan halaman web. HTML digunakan untuk menyusun struktur halaman, sedangkan CSS digunakan untuk memperindah tampilannya. Penggunaan CSS eksternal memudahkan pengelolaan desain karena aturan tampilan dapat ditulis secara terpisah dari dokumen HTML.
+Menambahkan CSS secara langsung pada tag paragraf menggunakan atribut `style` untuk mengatur posisi dan warna teks.
+
+**Screenshot:**
+
+![Langkah 3](Screenshots/langkah3-inline-css.png)
+
+### 4. Membuat CSS Eksternal
+
+Membuat file `style_eksternal.css` dan menghubungkannya dengan HTML menggunakan tag `<link>`.
+
+**Screenshot:**
+
+![Langkah 4](Screenshots/langkah4-css-eksternal.png)
+
+### 5. Menambahkan CSS Selector
+
+Menggunakan ID Selector (`#intro`) dan Class Selector (`.button` dan `.btn-primary`) untuk mengatur tampilan elemen HTML.
+
+**Screenshot:**
+
+![Langkah 5](Screenshots/langkah5-css-selector.png)
+
+## D. Validasi CSS
+
+Melakukan validasi file CSS menggunakan W3C CSS Validation Service untuk memeriksa kesesuaian penulisan CSS.
+
+**Screenshot:**
+
+![Validasi CSS](Screenshots/validasi-css.png)
+
+## E. Eksperimen CSS
+
+Melakukan eksperimen dengan mengubah dan menambahkan properti serta nilai CSS, seperti background, border, padding, margin, font-size, dan border-radius.
+
+**Screenshot:**
+
+![Eksperimen CSS](Screenshots/eksperimen-css.png)
+
+## F. Pertanyaan dan Tugas
+
+1. Melakukan eksperimen perubahan properti dan nilai CSS.
+2. Menjelaskan perbedaan selector `h1` dan `#intro h1`.
+3. Menjelaskan prioritas CSS internal, eksternal, dan inline.
+4. Menjelaskan prioritas ID Selector dan Class Selector.
+
+## G. Kesimpulan
+
+Berdasarkan praktikum yang telah dilakukan, dapat disimpulkan bahwa CSS digunakan untuk mengatur tampilan halaman web agar lebih menarik dan terstruktur.
+
+Praktikum ini memberikan pemahaman mengenai tiga metode penulisan CSS, yaitu internal, eksternal, dan inline. Selain itu, praktikum juga mempelajari penggunaan element selector, ID Selector, dan Class Selector untuk mengatur tampilan elemen HTML.
+
+## H. Teknologi yang Digunakan
+
+- HTML5
+- CSS3
+- Visual Studio Code
+- Web Browser
+- W3C CSS Validation Service
+
+---
+
+**Praktikum 3 - Pemrograman Web**  
+**Materi: CSS Dasar**
